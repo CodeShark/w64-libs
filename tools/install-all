@@ -1,0 +1,4 @@
+#!/bin/bash
+for file in $(ls $1); do
+	tar --strip-components=1 -xjvf "$1/$file" -C "$2"
+done 

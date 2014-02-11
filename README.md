@@ -5,16 +5,19 @@ Tools
 copydiff - a tool to copy the set of files changed in a git repository between two commits
 		to a particular location.
 
-	Usage:		copydiff <commit 1> <commit 2> <location>
-
-	Example:	copydiff HEAD^ HEAD /home/me/diff_files
+	Usage:		./copydiff <commit 1> <commit 2> <location>
+	Example:	./copydiff HEAD^ HEAD /home/me/diff_files
 
 
 install - a tool to untar a compressed library to a particular sysroot
 
-	Usage:		install <library> <sysroot>
+	Usage:		./install <library> <sysroot>
+	Example:	./install ../libs/mylib-1.2.3-dev /usr/x86_64-w64-mingw32
 
-	Example:	install ../libs/mylib-1.2.3-dev /usr/x86_64-w64-mingw32
+install-all - a tool to untar all libraries in a directory to a particular sysroot
+
+	Usage:		./install-all <directory> <sysroot>
+	Example:	./install-all ../libs /usr/x86_64-w64-mingw32
 
 Disclaimer
 
