@@ -1,0 +1,9 @@
+#!/bin/bash
+for file in $(git diff $1 $2 --name-only); do
+	echo "copying $file..."
+	dir=$(dirname "$file")
+	mkdir -p "$3/$dir"
+	cp "$file" "$3/$dir"
+done
+
+echo "done."

@@ -1,0 +1,2 @@
+#!/bin/bash
+tar --strip-components=1 -xjvf "$1.tar.bz2" -C "$2" 
